@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
-    <!-- tailwind and daisy Ui cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- js config  -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'arow-primary' : '#ABEF5F',
-                'pera-text':'#737373',
-              }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 3</title>
+        <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    
+        <!-- Remix Icon CND  -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    
+        <!-- DaisyUi and Tailwind CND  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- google font CND -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    
+        <!-- scripts -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        backgroundImage: {
+                            'bgImg': "url('assets/bg.jpg')",
+                        },
+                        colors: {
+                            prime: '#ABEF5F',
+                        },
+                        fontFamily: {
+                            manrope: "Manrope",
+    
+                        }
+                    }
+                }
             }
-          }
-        }
-      </script>
-      <!-- css style  -->
-     <style>
-    .font-manrope {
-      font-family: "Manrope", sans-serif;
-      }
-     </style>
+        </script>
+    
 </head>
 <body class="h-[200rem] font-manrope">
     <header class="bg-gradient-to-t from-white to-slate-50">
@@ -116,6 +121,54 @@
                 </div>
             </section>
             <!-- banner section end here -->
+
+            <!-- About Us Section Start Here  -->
+            <section class="bg-[#F4F4F4]">
+            <div class="mx-auto w-11/12">            
+                <div>
+                    <img class="-ml-11 pt-3 hidden lg:flex" src="./assets/Vector.png" alt="">
+                </div>    
+
+                <div class="card mt-4 lg:card-side">
+                    <div class="space-y-6">
+                        <div class="mt-6 space-y-5 text-center lg:text-start lg:mt-0">
+                            <p class="font-bold py-2 px-4 text-[16px] inline bg-white rounded-3xl"> <i
+                                    class="ri-arrow-right-fill"></i>About Us</p>
+                            <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl">We design thoughtful,<br> liveable
+                                spaces
+                            </h2>
+                            <p class="mx-auto lg:mx-0 text-[14px] font-medium md:text-[16px] w-2/3 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents..</p>
+                        </div>
+                        <div class="gap-5 md:flex lg:flex-col space-y-5 md:space-y-0">
+                            <div class="bg-[#FFFFFF] flex md:w-2/3 p-5 rounded-xl lg:justify-center lg:items-center gap-2 ">
+                                <div>
+                                    <img src="./assets/commercial.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-[16px] md:text-[18px] lg:text-xl font-extrabold">Commercial</h1>
+                                    <p class="text-[16px] font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                                </div>
+                            </div>                          
+                            <div
+                                class="flex bg-[#FFFFFF] rounded-xl md:w-2/3 p-5 mt-10 lg:items-center lg:justify-center gap-2 ">
+                                <div>
+                                    <img src="./assets/residential.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-[16px] md:text-[18px] lg:text-xl font-extrabold">Residential</h1>
+                                    <p class="text-[16px] font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <figure
+                        class="mt-5 lg:mt-0 xl:mb-16 xl:h-[504px] rounded-2xl xl:w-[573px] h-56 md:h-96 object-cover object-center ">
+                        <img class="w-full rounded-2xl xl:h-full xl:w-full" src="./assets/Rectangle.png" alt="" />
+                    </figure>
+                </div>
+            </div>
+            </section>
+            <!-- About Us Section End Here  -->
         </section>
     </header>
     <main>
