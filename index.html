@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assignment 3</title>
         <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
-    
+
+        <script src="https://kit.fontawesome.com/2d4ee16dfd.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
         <!-- Remix Icon CND  -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    
         <!-- DaisyUi and Tailwind CND  -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
-    
         <!-- google font CND -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    
-    
         <!-- scripts -->
         <script>
             tailwind.config = {
@@ -40,7 +38,7 @@
         </script>
     
 </head>
-<body class="font-manrope ">
+<body class="font-manrope text-black">
     <!-- header  -->
     <header class="bg-gradient-to-t from-white to-slate-50 py-5">
         <section class="w-11/12 mx-auto">
@@ -56,7 +54,7 @@
                     </div>
                     <div class="hidden navbar-center lg:flex">
                         <ul class="px-1 font-normal text-[16px] menu menu-horizontal">
-                            <li class="hover:font-extrabold"><a>Home</a></li>
+                            <li class="text-black font-bold"><a>Home</a></li>
                             <li class="hover:font-extrabold"><a>Services</a></li>
                             <li class="hover:font-extrabold"><a>Portfolio</a></li>
                             <li class="hover:font-extrabold"><a>Blogs</a></li>
@@ -109,11 +107,11 @@
                     <img class="mx-auto" src="./assets/banner.png" alt="">
                 </div>
                 <div class="text-center space-y-6 mb-10 xl:mb-24 md:mb-16">
-                    <h1 class="text-2xl from-neutral-950 mx-auto md:text-4xl lg:text-6xl sm:w-10/12 ">A barn house of this design has a striking appearance</h1>
+                    <h1 class="font-extrabold text-2xl from-neutral-950 mx-auto md:text-4xl lg:text-6xl sm:w-10/12 ">A barn house of this design has a striking appearance</h1>
                     <p class="mx-auto md:w-8/12 text-[14px] md:text-[16px] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                     </p>
                     <button
-                        class="btn border-none btn-active font-extrabold text-xl hover:bg-prime font-bold text-xl w-full md:w-[250px] rounded-3xl bg-[#94d64980]">View
+                        class="btn text-black border-none btn-active font-extrabold text-xl hover:bg-prime  w-full md:w-[250px] rounded-3xl bg-[#94d64980]">View
                         Details
                         <div>
                             <i class="ri-arrow-right-up-line bg-prime text-black rounded-full p-2 text-xl"></i>
@@ -290,6 +288,53 @@
         </section>
         <!-- Explore Our Latest Works Section End Here -->
 
+        <!--Special section Start-->
+        <section class="flex flex-wrap flex-col justify-center items-center mb-20 lg:mb-32">
+        <div class="text-center flex flex-col justify-center items-center">
+      <div class="mt-16 bg-[#e5f3d6] rounded-full px-6 py-3">
+        <i class="ri-arrow-right-fill"></i>
+        <a>Customer Testimonial</a>
+      </div>
+      <h1 class="py-5 w-[80%] text-center font-extrabold text-2xl">What do people say about us?</h1>
+        </div> 
+
+        <div class="w-[90%] lg:w-[60%] flex flex-col lg:flex-row gap-4 lg:mt-5">
+      <div class="flex flex-col justify-start items-start border-2 border-[#e9e9e9] rounded-xl py-4 px-5 ">
+        <i class="fa-solid fa-quote-left text-5xl text-[#abef5f] pb-2"></i>
+        <div class="w-[60px] h-[60px] overflow-hidden relative flex items-center rounded-full">
+            <img class="absolute w-full" src="./assets/phto1.jpg" alt="">
+        </div>
+        <h1 class="text-[1.1rem] font-extrabold py-1">Savannah Nguyen</h1>
+        <p>Nursing Assistant</p>
+        <h1 class="text-xl font-extrabold py-3">We had a complex commercial construction project</h1>
+        <p class="">The barn house captivates with its blend of captivates with its blend of rustic charm and modern .</p>
+      </div>
+
+      <div class="flex flex-col justify-start items-start border-2 border-[#e9e9e9] rounded-xl py-4 px-5">
+        <i class="fa-solid fa-quote-left text-5xl text-[#abef5f] pb-2"></i>
+        <div class="w-[60px] h-[60px] overflow-hidden relative flex items-center rounded-full">
+            <img class="absolute w-full" src="./assets/phto3.jpg" alt="">
+        </div>
+        <h1 class="text-[1.1rem] font-extrabold py-1">Devon Lane</h1>
+        <p>President of Sales</p>
+        <h1 class="text-xl font-extrabold py-3">Dream house isn't dream anymore</h1>
+        <p class="">The barn house captivates with its blend of captivates with its blend of rustic charm and modern .</p>
+      </div>
+
+      <div class="flex flex-col justify-start items-start border-2 border-[#e9e9e9] rounded-xl py-4 px-5">
+        <i class="fa-solid fa-quote-left text-5xl text-[#abef5f] pb-2"></i>
+        <div class="w-[60px] h-[60px] overflow-hidden relative flex items-center rounded-full">
+            <img class="absolute w-full" src="./assets/phto2.jpg" alt="">
+        </div>
+        <h1 class="text-[1.1rem] font-extrabold py-1">Darrell Steward</h1>
+        <p>Medical Assistant</p>
+        <h1 class="text-xl font-extrabold py-3">Transforming Our Construction Experience</h1>
+        <p class="">The barn house captivates with its blend of captivates with its blend of rustic charm and modern .</p>
+      </div>
+        </div>
+        </section>
+        <!--Special section  end-->
+
         <!-- Let’s Connect Section Start Here -->
         <section class="py-12 bg-bgImg bg-no-repeat bg-cover">
             <div class="mx-auto w-11/12 pb-10">           
@@ -318,7 +363,7 @@
                                 class="input bg-[#FFFFFF] input-ghost w-full rounded-[60px]  md:pr-64 " />
                         </div>
                         <div>
-                            <input type="text" placeholder="Emain Address"
+                            <input type="text" placeholder="Email Address"
                                 class="input bg-[#FFFFFF] input-ghost w-full rounded-[60px]  md:pr-64 " />
                         </div>
                     </div>
@@ -326,7 +371,7 @@
                         <textarea placeholder="Write your message here"
                             class="textarea textarea-bordered bg-[#FFFFFF] w-full rounded-3xl max-h-60 min-h-60 max-w-[950px]"></textarea>
                         <button
-                            class="border-none btn btn-active text-xl w-full lg:max-w-[950px] rounded-3xl hover:bg-prime bg-[#ABEF5F] text-xl font-extrabold">Send
+                            class="border-none text-black btn btn-active w-full lg:max-w-[950px] rounded-3xl hover:bg-prime bg-[#ABEF5F] text-xl font-extrabold">Send
                             Mail
                             <div>
                                 <i class="ri-arrow-right-up-line bg-black text-white rounded-full p-2 text-xl"></i>
@@ -364,7 +409,7 @@
 
         <div>
             <button
-                class="btn btn-active border-none hover:bg-prime rounded-3xl bg-prime w-full sm:w-auto text-xl font-extrabold">Book
+                class="btn text-black btn-active border-none hover:bg-prime rounded-3xl bg-prime w-full sm:w-auto text-xl font-extrabold">Book
                 Consult
                 <div>
                     <i class="ri-arrow-right-up-line bg-black text-white rounded-full p-2 text-xl"></i>
